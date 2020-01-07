@@ -1,21 +1,55 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <title>Test</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+{% include header.html %}
 
-    <link rel="stylesheet" href="/style.css" />
+{% if site.layout == 'stacked' %}
+  <div class="container-lg py-6 p-responsive text-center">
+    {% include masthead.html metadata=true %}
 
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <h1>Message</h1>
+    <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
+      {{ content }}
+    </div>
 
-    <p>
-      Salut, ça va ?! Moi ça va.
-    </p>
+    <div class="my-6">
+      {% include projects.html %}
+    </div>
 
-  </body>
-</html>
+    {% if site.topics %}
+      <div class="my-6">
+        {% include interests.html %}
+      </div>
+    {% endif %}
+
+    {% unless posts_total == 0 %}
+      <div class="my-6">
+        {% include thoughts.html %}
+      </div>
+    {% endunless %}
+  </div>
+{% else %}
+  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
+      {% include masthead.html metadata=true %}
+    </div>
+
+    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+      <div class="mx-auto" style="max-width: 900px;">
+        {% unless content == ""  %}
+          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+            {{ content }}
+          </div>
+        {% endunless %}
+
+        {% include projects.html %}
+
+        {% if site.topics %}
+          {% include interests.html %}
+        {% endif %}
+
+        {% unless posts_total == 0 %}
+          {% include thoughts.html %}
+        {% endunless %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% include footer.html %}
