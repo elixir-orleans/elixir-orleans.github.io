@@ -397,6 +397,10 @@ select.selectmenu {
   margin-bottom: 0;
 }
 
+p.link {
+  color: #073763;
+}
+
 p.animatedfadeInUp {
   color: #3f3d4b;
   font-family: "Komika Text";
