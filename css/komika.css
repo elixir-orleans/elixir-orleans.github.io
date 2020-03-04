@@ -1,4 +1,6 @@
 @font-face {
   font-family: "KomikaText";
-  src: url("../fonts/KOMTXT__.ttf") format("truetype");
+  src: url("../fonts/komikatext/KOMTXT__.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
