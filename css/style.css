@@ -53,6 +53,10 @@ a {
   color: #4b5056;
 }
 
+a.link {
+  color: #073763;
+}
+
 a:active {
   outline: 0;
   text-decoration: none;
@@ -395,10 +399,6 @@ select.selectmenu {
 
 #featured .row {
   margin-bottom: 0;
-}
-
-p.link {
-  color: #073763;
 }
 
 p.animatedfadeInUp {
