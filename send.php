@@ -16,7 +16,7 @@
        'X-Mailer' => 'PHP/' . phpversion()
       );
 
-    $retour = mail(ùto, $subject, $message, $headers);
+    $retour = mail($to, $subject, $message, $headers);
     if ($retour) {
         echo '<p>Votre message a bien été envoyé.</p>';
     }
