@@ -7,12 +7,12 @@
 
 <body>
     <?php
-      $to      = 'elixir-orleans@gmail.com';
-      $subject = 'Contact - '.'Test'.' - '.'Nom';
-      $message = 'Message';
+      $to      = 'elixir.orleans@gmail.com';
+      $subject = 'Contact - '.$_POST['subject'].' - '.$_POST['name'];
+      $message = $_POST['message'];
       $headers = array(
-        'From' => 'test@gmail.com',
-        'Reply-To' => 'test@gmail.com',
+        'From' => $_POST['email'],
+        'Reply-To' => $_POST['email'],
        'X-Mailer' => 'PHP/' . phpversion()
       );
 
