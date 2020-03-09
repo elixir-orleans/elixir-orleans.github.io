@@ -166,7 +166,7 @@
             <div id="errormessage"></div>
             <form
               method="post"
-              action="https://forms.un-static.com/forms/6b8765bbd3d0eaa777a515ce6cbe11079423d02c"
+              action="https://mailthis.to/elixir.orleans@gmail.com"
               role="form"
               class="contactForm"
             >
@@ -186,7 +186,7 @@
                 <div class="span4 form-group">
                   <input
                     type="email"
-                    name="email"
+                    name="_reply-to"
                     id="email"
                     placeholder="Votre Adresse Email"
                     data-rule="email"
@@ -197,7 +197,7 @@
                 <div class="span8 form-group">
                   <input
                     type="text"
-                    name="subject"
+                    name="_subject"
                     id="subject"
                     placeholder="Objet"
                     data-rule="minlen:4"
@@ -213,6 +213,13 @@
                     data-msg="Écrivez-nous un petit quelque chose"
                     placeholder="Message"
                   ></textarea>
+                  <div class="span8 form-group">
+                    <input
+                      type="hidden"
+                      name="_confirmation"
+                      value="Message envoyé !"
+                    />
+                  </div>
                   <div class="validation"></div>
                   <div class="text-center">
                     <button
