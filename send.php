@@ -7,16 +7,7 @@
 
 <body>
     <?php
-      $to      = 'elixir.orleans@gmail.com';
-      $subject = 'Contact - '.$_POST['subject'].' - '.$_POST['name'];
-      $message = $_POST['message'];
-      $headers = array(
-        'From' => $_POST['email'],
-        'Reply-To' => $_POST['email'],
-       'X-Mailer' => 'PHP/' . phpversion()
-      );
-
-    $retour = mail($to, $subject, $message, $headers);
+    $retour = mail('elixir.orleans@gmail.com', 'COntact - ', 'Test', 'From : webmaster@monsite.fr');
     if ($retour) {
         echo '<p>Votre message a bien été envoyé.</p>';
     }
