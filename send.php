@@ -8,11 +8,11 @@
 <body>
     <?php
       $to      = 'elixir-orleans@gmail.com';
-      $subject = 'Contact - '.$_POST['subject'].' - '.$_POST['name'];
-      $message = $_POST['message'];
+      $subject = 'Contact - '.'Test'.' - '.'Nom';
+      $message = 'Message';
       $headers = array(
-        'From' => $_POST['email'],
-        'Reply-To' => $_POST['email'],
+        'From' => 'test@gmail.com',
+        'Reply-To' => 'test@gmail.com',
        'X-Mailer' => 'PHP/' . phpversion()
       );
 
