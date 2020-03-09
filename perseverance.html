@@ -143,7 +143,7 @@
                     <a href="gen-z.hmtl">Génération Z</a>
                     <i class="icon-angle-right"></i>
                   </li>
-                  <li class="active">Hyperconnectivité</li>
+                  <li class="active">Persévérance</li>
                 </ul>
               </div>
             </div>
@@ -151,79 +151,34 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="span8">
-            <h4>Preneez contact avec nous, nous vous répondrons</h4>
-
-            <div id="sendmessage">
-              Votre message a été envoyé. En vous remerciant !
+      <section id="content">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <h4>Persévérance</h4><br><br>
+              <p class="text-z">
+Vous ne vous imaginez pas à quel point notre détermination et notre abnégation nous
+propulsent dans toutes nos entreprises personnelles et professionnelles. Malgré la difficulté
+que cela représente, les étudiants se doivent par exemple de valider leur année par des stages
+en entreprise. Cependant, les entreprises restent muettes ou pour la plupart du temps émettent
+des avis défavorables à la suite de nos candidatures pour raison de manque d’expérience.
+Mais, si la chance ne nous est pas octroyée d’apprendre et de mettre en pratique nos
+connaissances, l’enseignement théorique que nous recevons, comment pourront nous acquérir
+une expérience professionnelle significative. Nous sommes beaucoup moins expérimentés que
+la génération Z mais notre soif d’apprendre, notre rigueur dans le travail et notre facilité
+d’apprentissage nous permettent de faire deux fois plus en deux fois moins de temps.
+              </p>
             </div>
-            <div id="errormessage"></div>
-            <form
-              action="send.php"
-              method="post"
-              role="form"
-              class="contactForm"
-            >
-              <div class="row">
-                <div class="span4 form-group field">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Votre Nom"
-                    data-rule="minlen:3"
-                    data-msg="Merci d'entrer au moins 3 caractères"
-                  />
-                  <div class="validation"></div>
-                </div>
-
-                <div class="span4 form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Votre Adresse Email"
-                    data-rule="email"
-                    data-msg="Merci d'entrer une adresse email valide"
-                  />
-                  <div class="validation"></div>
-                </div>
-                <div class="span8 form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Objet"
-                    data-rule="minlen:4"
-                    data-msg="Merci d'entrer au moins 4 caractères"
-                  />
-                  <div class="validation"></div>
-                </div>
-                <div class="span8 form-group">
-                  <textarea
-                    name="message"
-                    rows="5"
-                    data-rule="required"
-                    data-msg="Écrivez-nous un petit quelque chose"
-                    placeholder="Message"
-                  ></textarea>
-                  <div class="validation"></div>
-                  <div class="text-center">
-                    <button
-                      class="btn btn-theme btn-medium margintop10"
-                      type="submit"
-                    >
-                      Envoyer
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
           </div>
-        </div>
-      </div>
+
+          <!-- divider -->
+          <div class="row">
+            <div class="span12">
+              <div class="solidline"></div>
+            </div>
+          </div>
+          <!-- end divider -->
+      </section>
 
       <footer>
         <div class="container">
@@ -300,9 +255,6 @@
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/inview.js"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
 
     <!-- Template Custom JavaScript File -->
     <script src="js/custom.js"></script>
