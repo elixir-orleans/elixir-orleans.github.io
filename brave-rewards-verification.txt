@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: elixir-orleans.github.io
+Token: 5f7b8fa1d13248d1ad1401b6e47ff134232fa33427073287d65dbbd29b29c0ff
